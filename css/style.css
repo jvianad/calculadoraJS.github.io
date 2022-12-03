@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    font-size: 2rem;
+    border: 0.5px solid gray;
+}
+
+.calculadora-display{
+    padding: 25px 20px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+}
+
+.valor-superior{
+    padding: 10px;
+}
+
+.valor-inferior{
+    padding: 25px;
+}
+
+.calculadora-keypad{
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keypad-button{
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 1px solid gray;
+    
+}
+
+.keypad-button:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.25s;
+}
+
+.keypad-button.green{
+    background-color: greenyellow;
+    width: 50%;
+}
+
+.keypad-button.green:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.25s;
+}
+
+.keypad-button.blue{
+    background-color: aqua;
+}
+
+.keypad-button.blue:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.25s;
+}
+
+.keypad-button.darkblue{
+    background-color: blue;
+    width: 50%;
+}
+
+.keypad-button.darkblue:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.25s;
+}
